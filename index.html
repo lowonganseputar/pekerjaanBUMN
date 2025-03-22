@@ -1,0 +1,1307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INFO LOWONGAN KERJA TERBARU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
+  <style>
+    .navbar-brand img {
+      height: 40px; /* Adjust the height as needed */
+      width: auto; /* Maintain aspect ratio */
+      margin-right: 40px;
+    }
+
+    .content-heading {
+      text-align: center; /* Center-align the headings */
+      margin-top: 20px; /* Add margin between the navbar and headings */
+    }
+
+    .button {
+      padding: 10px 20px; /* Adjust padding as needed */
+      font-size: 1rem; /* Adjust font size */
+      font-weight: bold; /* Make text bold */
+      border-radius: 20px; /* Rounded corners */
+      text-transform: uppercase; /* Uppercase text */
+      transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+      display: inline-block; /* Ensure proper spacing */
+    }
+
+    .button:hover {
+      background-color: #eb059e; /* Darker shade for hover effect */
+      transform: scale(1.05); /* Slightly enlarge the button */
+    }
+
+    .button:active {
+      transform: scale(0.95); /* Slightly shrink the button on click */
+    }
+
+    .hero {
+      text-align: center; /* Center-align text */
+      margin-top: 40px; /* Add top margin */
+      background-color: #faf8f8; /* Light grey background color */
+      padding: 40px 20px; /* Add padding for better spacing */
+      border-radius: 10px; /* Optional: rounded corners */
+      margin-left: 40px; /* Additional padding on the left */
+      margin-right: 40px; /* Additional padding on the right */
+    }
+
+    .hero h2 {
+      font-size: 2rem; /* Adjust font size for larger screens */
+      margin-bottom: 10px; /* Space below the heading */
+    }
+
+    .hero span {
+      font-size: 1rem; /* Adjust font size */
+      color: #555; /* Slightly lighter color for subtitle */
+    }
+    
+     img {
+            width: 100%;
+            height: auto; /* Menjaga aspek rasio gambar */
+            display: block; /* Menghilangkan ruang ekstra di bawah gambar */
+            margin: 0; /* Menghapus margin default */
+        }
+
+    /* Responsive font sizes */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+      }
+
+      .hero span {
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
+      }
+
+      .button {
+        font-size: 0.875rem; /* Adjust button font size for smaller screens */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero h2 {
+        font-size: 1.25rem; /* Further adjustment for very small screens */
+      }
+
+      .hero span {
+        font-size: 0.80rem; /* Further adjustment for very small screens */
+      }
+
+      .button {
+        font-size: 0.75rem; /* Further adjustment for very small screens */
+      }
+
+      .hero {
+        padding-left: 10px; /* Reduce padding for smaller screens */
+        padding-right: 10px; /* Reduce padding for smaller screens */
+      }
+    }
+
+    .img-fluid {
+      max-width: 100%; /* Make sure image is responsive */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Ensure proper spacing */
+      margin: 20px auto; /* Center the image and add margin */
+    }
+
+    /* Card styling */
+    .card {
+      border: 1px solid #e6dede; /* Border color to match Bootstrap theme */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Subtle shadow */
+      overflow: hidden; /* Ensure the card content fits inside */
+      margin-bottom: 20px; /* Margin between cards */
+    }
+
+    .card-img-top {
+      object-fit: cover; /* Ensure image covers the top section */
+      height: 180px; /* Set a fixed height for the image */
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      padding: 15px; /* Ensure padding if needed */
+    }
+
+    .card-body .button {
+      margin-top: auto; /* Push the button to the bottom */
+    }
+
+    .card-icons {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap: 10px; /* Add spacing between items */
+      margin-bottom: 15px;
+    }
+
+    .card-icons i {
+      margin-right: 10px; /* Space between icon and text */
+    }
+
+    .card-title {
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 576px) {
+      .card {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+      }
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #343a40; /* Dark background for footer */
+      color: white; /* White text color */
+    }
+
+    footer a {
+      color: white; /* White text color for links */
+      text-decoration: none; /* Remove underline from links */
+    }
+
+    footer a:hover {
+      text-decoration: underline; /* Underline on hover */
+    }
+
+  /* Add some styling for the category cards */
+  .card {
+    border: 1px solid #f00505; /* Matching border with Bootstrap theme */
+    border-radius: 40px; /* Rounded corners */
+    transition: transform 0.3s; /* Transition effect */
+    text-decoration:none;
+    margin-bottom: 5px;
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 14px rgba(0,0,0,0.2); /* Add shadow */
+  }
+
+  .card i {
+    margin-top:5px;
+    margin-bottom:5px;
+    color: #ff0077; /* Change icon color */
+    font-size: 1.5rem;
+    text-decoration:none;
+  }
+
+.card p {
+    margin-top: 2px; /* Space between icon and text */
+    text-decoration: none; /* Menghapus garis bawah pada teks */
+    color: inherit; /* Menggunakan warna teks default */
+    font-size:0.5rem;
+    font-weight:bold;
+}
+
+.card a {
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    color: inherit; /* Menggunakan warna teks default */
+}
+
+  
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="BARU.jpg" alt="Brand Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+  </nav>
+
+  <img src="BARU.jpg" alt="Placeholder Image" class="img-fluid">
+
+
+    <div class="container mt-4">
+      <div class="hero">
+        <h2>INFO LOWONGAN KERJA TERBARU PENDAFTAR GRATIS</h2>
+        <span>Berikut adalah beberapa lowongan pekerjaan gratis yang bisa anda pilih.</span>
+      </div>
+  
+
+  <!-- Hero Section -->
+  
+    <!-- Card Section -->
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="ptk.webp" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Pendaftaran CPNS & PPPK 2025</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.000.000 - Rp8.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Berpegalaman/Tidak berpengalaman</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PERTANIAN.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Petani Melenial</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp7.000.000 - Rp9.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="JAWASATUPOWER.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Jawa Satu Power (Pertamina Power Group)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp5.000.000 - Rp30.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office/lapangan</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.BRI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bank Rakyat Indonesia (Persero) Tbk</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="TAMBANG.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT Aneka Tambang (ANTAM)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp11.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="MAKAN.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Makanan Gratis</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp5.000.000 - Rp7.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="HAJI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Nusantara</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="daamon1.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bank danamon indonesia,Tbk</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp5.000.000 - Rp7.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="r.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Supermar Market Indonesia</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp5.000.000 - Rp7.500.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="as.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center"></h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp20.000.000 - Rp30.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="IFG.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bahana Pembinaan Usaha Indonesia (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000- 20.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Part Time/Full Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional cards -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="INHUTANI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Pekrutmen Pro Hire PT.Inhutani</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Magang</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the card as needed -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="GARUDA INDONESIA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Garuda Indonesia(Persero) Tbk</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp5.000.000 - 20.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Tanpa Pengalaman di persilahkan</span>
+              <span><i class="fa-solid fa-building"></i> Kantor/Lapangan</span>
+              </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PELINDO.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Pelindo Solusi Logistik</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PERUMNAS.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Perusahaan Umum (Perum) Perumnas</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.ANTARA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Perum Lembaga Kantor Berita Nasional Antara</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PNM.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Permodalan Nasiaonal Madani (PNM)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="POSIND.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Pos Indonesia (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp7.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PREEPORT.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Freeport Indonesia</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp20.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT,PELITAAIR.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Pelita Air service (Pelita Air)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp16.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.AJI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Asuransi Jasa Indonesia</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.ANTAM.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Emas Antam Indonesia</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PFN.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Produksi Film Negara (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+     
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.ASYST.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Aero Systems Indonesia (Garuda Indonesia Group)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PLN.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Paguntaka Cahaya Nusantara (PLN Group)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.BNI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bank Negara Indonesia (Persero) Tbk</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.BOSNET.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bosnet Distribution Indonesia (Telkom Group)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.BTN.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bank Tabungan Negara (Persero) Tbk</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.BP.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Balai Pustaka (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.DAHANA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Dahana</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.EP.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h6 class="card-title text-center">PT.Elnusa Petrofin</h6>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.GDPS.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Garuda Daya Pratama Sejahtera</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.000.000 - Rp20.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PJT.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Jasa Tirta II</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.INDRAKARYA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Indra Karya (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.ISH.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Infomedia Solusi Humanika (Telkom Group)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.JIEP.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Jakarta Industri Estate Pulogadung</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.KBI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Kliring Berjangka Indonesia (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.KIMIAFARMA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Kimia Farma Diagnostika</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.KRAKATAU.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Krakatau Posco</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.000.000 - Rp17.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.MANDIRI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bank Mandiri (Persero) Tbk</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.NBETON.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Nindya Beton</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp20.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.RUMAHBUMN.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Rumah BUMN</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PERSEROBATAM.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Persero Batam</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PERTAMINA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Patra Drilling Contractor (Pertamina PDC)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PERURI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Perum Percetakan Uang Republik Indonesia (PERURI)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PPI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Perusahaan Perdagangan Indonesia</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.BERDIKARI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Berdikari</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+     
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PETRONESIA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Petronesia Benimel (HK Group)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp20.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.IFG.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bahana Pembinaan Usaha Indonesia (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PTC.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Pertamina Training & Consulting (PTC)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.RECARE.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Rekayasa Cakrawala Resources (RECARE)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PUPUK.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Pupuk Indonesia (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.SARINAH.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Sarinah</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.RDM.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Rekind Daya Mamuju</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.PERKASA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Permata Karya Jasa (PGN Group)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp13.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.KAI.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Reska Multi Usaha (KAI Services)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp12.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+       
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.SEROTRANS.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Aerotrans Services Indonesia (Garuda Indonesia Group)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.BINA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Bina Karya (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.SUCOFINDO.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Sucofindo</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.SURVEYOR.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Surveyor Indonesia</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp4.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.YAKULT.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Yakult Indonesia Persada</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="RS ICH.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">ICH RS Pertamina Tanjung</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="SPX.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Shopee Internasional Indonesia</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="TELKOM.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Telkom Indonesia (Persero) Tbk</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp10.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="VIRAMA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Virama Karya (Persero)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="WASKITA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Waskita Karya (Persero) Tbk</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.SIGMA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Sigma Cipta Caraka (Telkomsigma)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp8.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.JASARAHARJA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Asuransi Kerugian Jasa Raharja</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.000.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PT.SENA.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-center">PT.Solusi Energi Nusantara (SENA)</h5>
+            <div class="card-icons">
+              <span><i class="fa-solid fa-wallet"></i> Rp3.500.000 - Rp15.000.000</span>
+              <span><i class="fa-solid fa-clock"></i> Full Time/Part Time</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Experienced</span>
+              <span><i class="fa-solid fa-building"></i> Office</span>
+            </div>
+            <a href="http://daftarsekarang-m53.infodaftar.online/" class="button btn btn-primary">LAMAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+
+     
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <div class="container">
+      <p class="mb-0">© 2024 Loker Terbaru. All rights reserved.</p>
+      <p class="mb-0">
+        <a href="#" class="text-white">Privacy Policy</a> | 
+        <a href="#" class="text-white">Terms of Service</a>
+      </p>
+      <p class="mb-0">
+        Follow us on: 
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a> 
+        <a href="#" class="text-white ml-2"><i class="fab fa-twitter"></i></a> 
+        <a href="#" class="text-white ml-2"><i class="fab fa-linkedin-in"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
